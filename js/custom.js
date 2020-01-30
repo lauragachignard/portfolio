@@ -2,6 +2,8 @@
 (function($) {
     'use strict';
 
+    console.log('ok')
+
     // Main Navigation
     $( '.hamburger-menu' ).on( 'click', function() {
         $(this).toggleClass('close');
@@ -16,4 +18,10 @@
             scrollTop: $( '.scroll-down' ).offset().top + 100
         }, 800 );
     });
+
+    $(document).ready(function() {
+        console.log('ok');
+        $('.image-link').magnificPopup({type:'image'});
+    });
+
 })(jQuery);

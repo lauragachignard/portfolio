@@ -363,8 +363,14 @@ a:hover, a:active {
 }
 
 .portfolio-content figure {
-    margin: 0;
-    height: 185px;
+    margin-bottom: 3px;
+    margin-right: 6px;
+    margin-top: 3px;
+}
+
+.portfolio-content figure:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 .portfolio-content figure img {
