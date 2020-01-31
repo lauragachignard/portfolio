@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Work+Sans:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700|Work+Sans:300,400,500,600,700');
 
 body {
     color: #191919;
@@ -46,8 +46,10 @@ a:hover, a:active {
 @media screen and (min-width: 992px) {
     .outer-container {
         padding-left: 80px;
-        margin-left: 250px;
-        margin-right: 250px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 400px;
+        margin-right: 50px;
     }
 }
 
@@ -74,6 +76,11 @@ a:hover, a:active {
 
 .site-navigation .site-title a {
     display: block;
+    
+}
+
+.logo {
+    width: 60%;
 }
 
 /*
@@ -126,7 +133,7 @@ a:hover, a:active {
 .main-menu li {
     display: block;
     padding: 12px 0;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     border-bottom: 1px solid #ebebeb;
 }
@@ -137,15 +144,14 @@ a:hover, a:active {
 
 .main-menu li a {
     display: block;
-    color: #a6a6a6;
+    color: #717171;
     text-decoration: none;
     transition: all 0.35s;
 }
 
 .main-menu li a:hover,
 .main-menu li.current-menu-item a {
-    color: #f0437e;
-    font-size: 130%;
+    color: #bf766a;
 }
 
 /*
@@ -168,7 +174,7 @@ a:hover, a:active {
 }
 
 .social-profiles ul li a:hover {
-    color: #f0437e;
+    color: #bf766a;
 }
 
 .nav-bar-sep {
@@ -256,7 +262,7 @@ a:hover, a:active {
         left: 0;
         z-index: 999;
         width: 80px;
-        height: 100vh;
+        height: 100%;
         padding: 0 15px;
         box-shadow: 6px 0 12px rgba(0,0,0,.05);
     }
@@ -296,12 +302,15 @@ a:hover, a:active {
     }
 
     .site-navigation {
-        float: left;
-        left: -250px;
-        z-index: 99;
+        height: 100%;
         width: 250px;
-        padding: 0;
-        box-shadow: 16px 0 42px rgba(0,0,0,.09);
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        overflow-x: hidden;
+        padding-top: 20px;
     }
 
     .main-menu {
@@ -311,7 +320,8 @@ a:hover, a:active {
 
     .main-menu li {
         border-bottom: 0;
-        text-align: center;
+        text-align: left;
+        margin-left: 50px;
     }
 
     .social-profiles ul li {
@@ -398,7 +408,7 @@ a:hover, a:active {
     width: 100%;
     height: 100%;
     background: rgba(255,255,255,.9);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align: center;
     visibility: hidden;
     opacity: 0;
@@ -412,7 +422,7 @@ a:hover, a:active {
 
 .portfolio-content h3 {
     margin-bottom: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
 }
@@ -459,7 +469,7 @@ a:hover, a:active {
     margin: 0;
     color: #a6a6a6;
     list-style: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .breadcrumbs li {
@@ -505,12 +515,12 @@ a:hover, a:active {
 .single-portfolio .content-area h1 {
     margin-top: 20px;
     font-size: 2.25rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .single-portfolio .content-area .entry-content {
     margin-top: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.6;
     color: #595959;
 }
@@ -525,7 +535,7 @@ a:hover, a:active {
 .single-portfolio .post-share label {
     margin-right: 32px;
     text-transform: capitalize;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .single-portfolio .post-share ul {
@@ -576,7 +586,7 @@ a:hover, a:active {
 --------------------------------*/
 .single-portfolio .entry-meta {
     margin-top: 24px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .single-portfolio .entry-meta label {
@@ -633,7 +643,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .blog-page {
     padding-top: 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .blog-page .blog-content figure,
@@ -786,7 +796,7 @@ a:hover, a:active {
 .single-post,
 .single-page {
     padding-bottom: 70px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 /*
