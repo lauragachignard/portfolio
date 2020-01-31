@@ -46,6 +46,8 @@ a:hover, a:active {
 @media screen and (min-width: 992px) {
     .outer-container {
         padding-left: 80px;
+        margin-left: 250px;
+        margin-right: 250px;
     }
 }
 
@@ -244,7 +246,9 @@ a:hover, a:active {
 }
 
 @media screen and (min-width: 992px) {
-    .site-header,
+    .site-header {
+        display: none;
+    };
     .site-navigation {
         position: fixed;
         top: 0;
@@ -291,6 +295,7 @@ a:hover, a:active {
     }
 
     .site-navigation {
+        float: left;
         left: -250px;
         z-index: 99;
         width: 250px;
