@@ -2,26 +2,15 @@
 (function($) {
     'use strict';
 
-    console.log('ok')
-
-    // Main Navigation
-    $( '.hamburger-menu' ).on( 'click', function() {
-        $(this).toggleClass('close');
-        $('.site-branding').toggleClass('hide');
-        $('.site-navigation').toggleClass('show');
-        $('.site-header').toggleClass('no-shadow');
-    });
-
-    // Scroll to Next Section
-    $( '.scroll-down' ).click(function() {
-        $( 'html, body' ).animate({
-            scrollTop: $( '.scroll-down' ).offset().top + 100
-        }, 800 );
+    $(document).ready(function() {
+      $('#menu-trigger').click(() => {
+        const status = ($('#menu').css('display') === 'none') ? 'block' : 'none';
+        $('#menu').css('display', status)
+      });
     });
 
     $(document).ready(function() {
-        console.log('ok');
-        $('.image-link').magnificPopup({type:'image'});
+      $('.image-link').magnificPopup({type:'image'});
     });
 
 })(jQuery);

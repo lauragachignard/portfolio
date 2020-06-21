@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "Dosis";
+  src: url("../fonts/dosis.ttf");
+}
+
+body {
+  font-family: "Dosis";
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  text-align: center;
+  margin: 30px;
+}
+
+.header a {
+  color: black;
+}
+
+.header img {
+  width: 15%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header .desktop-menu {
+  display: block;
+}
+
+.header .desktop-menu a {
+  margin: 50px;
+  font-size: 20px;
+}
+
+.header .selected_tab {
+  color: #F19EB7;
+  font-weight: bold;
+}
+
+.header .phone-menu {
+  display: none;
+}
+
+.header .phone-menu #menu {
+  display: none;
+}
+
+.header .phone-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.header .phone-menu li {
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
+  margin: 0 auto;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: 25px;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  -webkit-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+}
+
+.column img:hover {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  opacity: 0.5;
+  cursor: pointer;
+  border: solid #F19EB7;
+}
+
+.social_medias {
+  text-align: center;
+  margin: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.social_medias img {
+  width: 40px;
+  margin: 20px;
+}
+
+.contact {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact .contact_tab {
+  text-align: center;
+  margin: 30px;
+}
+
+.contact .contact_tab a {
+  color: black;
+}
+
+.contact .contact_tab span:hover {
+  color: #F19EB7;
+}
+
+.contact .contact_tab a:hover {
+  color: #F19EB7;
+}
+
+.contact .contact_tab b {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .row {
+    width: 90%
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .column img {
+    margin-bottom: 5px;
+  }
+
+  .header {
+    margin: 30px;
+  }
+
+  .header img {
+    width: 60%;
+  }
+
+  .header .desktop-menu {
+    display: none;
+  }
+
+  .header .phone-menu {
+    display: block;
+  }
+
+}
